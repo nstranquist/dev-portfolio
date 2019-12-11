@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 // import Button from '@material-ui/core/Button'
@@ -43,10 +44,12 @@ export const ProjectsHero: React.FC<IProps> = ({
             </Fab>
           </Grid>
           <Grid item>
-            <Fab variant="extended">
-              {/* TODO: set up routing so I can pull this page up */}
-              {ctaSecondary}
-            </Fab>
+            <Link to='/aboutme'>
+              <Fab variant="extended">
+                {/* TODO: set up routing so I can pull this page up */}
+                {ctaSecondary}
+              </Fab>
+            </Link>
           </Grid>
         </Grid>
       </div>

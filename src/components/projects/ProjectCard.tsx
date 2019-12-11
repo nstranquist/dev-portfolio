@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -44,31 +45,33 @@ export const ProjectCard: React.FC<IProps> = ({
   const [flipped, setFlipped] = useState<boolean>(false)
 
   return (
-    <Card className={cardClass}>
-      <CardMedia
-        className={cardMediaClass}
-        image={imageUrl}
-        title={imageTitle}
-      />
-      <CardContent className={cardContentClass}>
-        <Typography gutterBottom variant="h5" component="h2">
-          {title}
-        </Typography>
-        <Typography>
-          {subtitle}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" color="primary" href={codeUrl} target="_blank">
-          {/* Code/Nav Icon Here */}
-          <AttachFileIcon />
-          Code
-        </Button>
-        <Button size="small" color="primary" href={demoUrl} target="_blank">
-          See Demo
-          <ArrowForwardIcon />
-        </Button>
-      </CardActions>
-    </Card>
+    // <Link to={`/projects/${title}`} style={{textDecoration: 'none', color:'inherit'}}>
+      <Card className={cardClass}>
+        <CardMedia
+          className={cardMediaClass}
+          image={imageUrl}
+          title={imageTitle}
+        />
+        <CardContent className={cardContentClass}>
+          <Typography gutterBottom variant="h5" component="h2">
+            {title}
+          </Typography>
+          <Typography>
+            {subtitle}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small" color="primary" href={codeUrl} target="_blank">
+            {/* Code/Nav Icon Here */}
+            <AttachFileIcon />
+            Code
+          </Button>
+          <Button size="small" color="primary" href={demoUrl} target="_blank">
+            See Demo
+            <ArrowForwardIcon />
+          </Button>
+        </CardActions>
+      </Card>
+    // </Link>
   )
 }

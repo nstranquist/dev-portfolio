@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link as RouterLink } from 'react-router-dom'
 import { AppBar as AppBarMUI } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -25,9 +26,11 @@ export const AppBar: React.FC<IProps> = ({
         <Link href="https://github.com/nstranquist" target="_blank" style={{color:'white'}}>
           <GitHubIcon className={iconClass} />
         </Link>
-        <Typography variant="h6" color="inherit" noWrap>
-          {navTitle}
-        </Typography>
+        <RouterLink to='/projects' style={{color:'white', textDecoration:'none'}}>
+          <Typography variant="h6" color="inherit" noWrap>
+            {navTitle}
+          </Typography>
+        </RouterLink>
         {/* NavList Here */}
       </Toolbar>
     </AppBarMUI>

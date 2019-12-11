@@ -54,6 +54,7 @@ export const ProjectsContent = {
   "Projects": [
     {
       title: "My First Project",
+      subtitle: 'A subtitle that can summarize this first project',
       details: "For testing purposes only",
       url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
@@ -63,6 +64,7 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
+      subtitle: 'A subtitle that can summarize this first project',
       details: "For testing purposes only",
       url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
@@ -72,6 +74,7 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
+      subtitle: 'A subtitle that can summarize this first project',
       details: "For testing purposes only",
       url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",

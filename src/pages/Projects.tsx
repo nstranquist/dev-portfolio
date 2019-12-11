@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
@@ -39,12 +40,14 @@ export const Projects = () => {
           <Grid container spacing={4}>
             {projects.map((project, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
-                <ProjectCard
-                  cardData={project} 
-                  cardClass={classes.card}
-                  cardContentClass={classes.cardContent}
-                  cardMediaClass={classes.cardMedia}
-                />
+                <Link to={`/projects/${project.title}`} style={{textDecoration:'none', color:'inherit'}}>
+                  <ProjectCard
+                    cardData={project} 
+                    cardClass={classes.card}
+                    cardContentClass={classes.cardContent}
+                    cardMediaClass={classes.cardMedia}
+                  />
+                </Link>
               </Grid>
             ))}
           </Grid>
