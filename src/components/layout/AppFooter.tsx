@@ -3,15 +3,20 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link'
 
 interface IProps {
+  content: any
   footerClass: any
 }
 
 export const AppFooter: React.FC<IProps> = ({
+  content: {
+    heading,
+    smallText,
+  },
   footerClass
 }) => (
   <footer className={footerClass}>
     <Typography variant="h6" align="center" gutterBottom>
-      Thanks for stopping by!
+      {heading}
     </Typography>
     <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
       Please reach out on
@@ -21,7 +26,7 @@ export const AppFooter: React.FC<IProps> = ({
       for inquiries
     </Typography>
     <Typography variant="body2" color="textSecondary" align="center">
-      Nico Stranquist, 2019
+      {smallText}
     </Typography>
   </footer>
 )
