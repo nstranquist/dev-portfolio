@@ -18,6 +18,7 @@ export default function App() {
   return (
     <>
       <AppBar content={headerContent} iconClass={AppStyles.icon} />
+      {/* TODO: replace with some kind of <RouterView> to switch routes */}
       <ProjectsPage />
       <AppFooter content={footerContent} footerClass={AppStyles.footer} />
     </>

@@ -16,15 +16,19 @@ export const AppBar: React.FC<IProps> = ({
   },
   iconClass
 }) => {
+
+  // TODO: add a NavList for nav options, integrate with react-router for routing
+
   return (
     <AppBarMUI position="relative">
       <Toolbar>
-        <Link href="https://github.com" target="_blank" style={{color:'white'}}>
+        <Link href="https://github.com/nstranquist" target="_blank" style={{color:'white'}}>
           <GitHubIcon className={iconClass} />
         </Link>
         <Typography variant="h6" color="inherit" noWrap>
           {navTitle}
         </Typography>
+        {/* NavList Here */}
       </Toolbar>
     </AppBarMUI>
   )

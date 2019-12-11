@@ -1,7 +1,12 @@
 
 import { makeStyles } from '@material-ui/core/styles';
 
+// styles for the projects page
 export const useProjectStyles = makeStyles(theme => ({
+  icon: {
+    marginRight: theme.spacing(1),
+    // fontSize: '1.6rem'
+  },
   heroContent: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),

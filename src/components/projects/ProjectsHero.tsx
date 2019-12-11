@@ -1,21 +1,25 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
+// import Button from '@material-ui/core/Button'
+import Fab from '@material-ui/core/Fab'
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 interface IProps {
   content: any
   heroButtonsClass: any
+  iconClass: any
 }
 
 export const ProjectsHero: React.FC<IProps> = ({
   content: {
     title,
-    subtitle,
+    subtitles,
     ctaPrimary,
     ctaSecondary
   },
-  heroButtonsClass
+  heroButtonsClass,
+  iconClass
 }) => {
   return (
     <>
@@ -23,19 +27,26 @@ export const ProjectsHero: React.FC<IProps> = ({
         {title}
       </Typography>
       <Typography variant="h5" align="center" color="textSecondary" paragraph>
-        {subtitle}
+        {subtitles.map((subtitle: string) => (
+          <>
+            <span>{subtitle}</span>
+            <br/>
+          </>
+        ))}
       </Typography>
       <div className={heroButtonsClass}>
         <Grid container spacing={2} justify="center">
           <Grid item>
-            <Button variant="contained" color="primary">
+            <Fab variant="extended" color="primary" href="https://github.com" target="_blank">
+              <GitHubIcon className={iconClass} />
               {ctaPrimary}
-            </Button>
+            </Fab>
           </Grid>
           <Grid item>
-            <Button variant="outlined" color="primary">
+            <Fab variant="extended">
+              {/* TODO: set up routing so I can pull this page up */}
               {ctaSecondary}
-            </Button>
+            </Fab>
           </Grid>
         </Grid>
       </div>
