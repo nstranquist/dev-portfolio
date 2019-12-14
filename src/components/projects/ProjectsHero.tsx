@@ -28,17 +28,17 @@ export const ProjectsHero: React.FC<IProps> = ({
         {title}
       </Typography>
       <Typography variant="h5" align="center" color="textSecondary" paragraph>
-        {subtitles.map((subtitle: string) => (
-          <>
+        {subtitles.map((subtitle: string, index: number) => (
+          <React.Fragment key={index}>
             <span>{subtitle}</span>
             <br/>
-          </>
+          </React.Fragment>
         ))}
       </Typography>
       <div className={heroButtonsClass}>
         <Grid container spacing={2} justify="center">
           <Grid item>
-            <Fab variant="extended" color="primary" href="https://github.com" target="_blank">
+            <Fab variant="extended" color="primary" href="https://github.com/nstranquist" target="_blank">
               <GitHubIcon className={iconClass} />
               {ctaPrimary}
             </Fab>

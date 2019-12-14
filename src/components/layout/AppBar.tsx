@@ -23,7 +23,7 @@ export const AppBar: React.FC<IProps> = ({
   return (
     <AppBarMUI position="relative">
       <Toolbar>
-        <Link href="https://github.com/nstranquist" target="_blank" style={{color:'white'}}>
+        <Link href="https://github.com/nstranquist/dev-portfolio" target="_blank" style={{color:'white'}}>
           <GitHubIcon className={iconClass} />
         </Link>
         <RouterLink to='/projects' style={{color:'white', textDecoration:'none'}}>

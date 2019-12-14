@@ -11,11 +11,12 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
 
 export interface ProjectCard {
   title: string
-  subtitle: string
+  details: string
   imageUrl?: string
   imageTitle?: string
   codeUrl: string
   demoUrl?: string
+  detailsPath: string
 }
 
 interface IProps {
@@ -23,6 +24,7 @@ interface IProps {
   cardClass: any
   cardContentClass: any
   cardMediaClass: any
+  detailsPath: string
   // cardIconClass: any
 }
 
@@ -30,7 +32,7 @@ interface IProps {
 export const ProjectCard: React.FC<IProps> = ({
   cardData: {
     title,
-    subtitle,
+    details,
     imageUrl="https://placekitten.com/500/300",
     imageTitle="Image Title",
     codeUrl,
@@ -39,25 +41,27 @@ export const ProjectCard: React.FC<IProps> = ({
   cardClass,
   cardContentClass,
   cardMediaClass,
+  detailsPath,
   // cardIconClass
 }) => {
   // could add a hover or 'flip' feature to card, would pass in as prop to <CardWrapped> or something
-  const [flipped, setFlipped] = useState<boolean>(false)
+  // const [flipped, setFlipped] = useState<boolean>(false)
 
   return (
-    // <Link to={`/projects/${title}`} style={{textDecoration: 'none', color:'inherit'}}>
       <Card className={cardClass}>
-        <CardMedia
-          className={cardMediaClass}
-          image={imageUrl}
-          title={imageTitle}
-        />
+        <Link to={detailsPath} style={{color:'inherit', textDecoration:'none'}}>
+          <CardMedia
+            className={cardMediaClass}
+            image={imageUrl}
+            title={imageTitle}
+          />
+        </Link>
         <CardContent className={cardContentClass}>
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
           <Typography>
-            {subtitle}
+            {details}
           </Typography>
         </CardContent>
         <CardActions>
@@ -72,6 +76,5 @@ export const ProjectCard: React.FC<IProps> = ({
           </Button>
         </CardActions>
       </Card>
-    // </Link>
   )
 }

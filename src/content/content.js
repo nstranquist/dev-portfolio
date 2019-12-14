@@ -53,10 +53,16 @@ export const ProjectsContent = {
   },
   "Projects": [
     {
+      title: "KanBan Board",
+      details: 'Re-creating a tool often used in Agile development',
+      imageUrl: "/images/kanban-board.png",
+      imageTitle: 'screenshot of the kanban board project',
+      codeUrl: 'https://github.com/nstranquist/coding-challenge',
+      demoUrl: 'https://nstranquist.github.io/coding-challenge/',
+    },
+    {
       title: "My First Project",
-      subtitle: 'A subtitle that can summarize this first project',
-      details: "For testing purposes only",
-      url: "https://github.com",
+      details: 'A subtitle that can summarize this first project',
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -64,9 +70,7 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      subtitle: 'A subtitle that can summarize this first project',
-      details: "For testing purposes only",
-      url: "https://github.com",
+      details: 'A subtitle that can summarize this first project',
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -74,9 +78,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      subtitle: 'A subtitle that can summarize this first project',
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -84,8 +85,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -93,8 +92,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -102,8 +99,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -111,8 +106,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -120,8 +113,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
@@ -129,17 +120,6 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
-      imageUrl: "https://placekitten.com/300/500",
-      imageTitle: 'example title',
-      codeUrl: 'https://github.com/nstranquist',
-      demoUrl: 'https://github.com',
-    },
-    {
-      title: "My First Project",
-      details: "For testing purposes only",
-      url: "https://github.com",
       imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',

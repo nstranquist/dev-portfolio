@@ -40,14 +40,13 @@ export const Projects = () => {
           <Grid container spacing={4}>
             {projects.map((project, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
-                <Link to={`/projects/${project.title}`} style={{textDecoration:'none', color:'inherit'}}>
-                  <ProjectCard
-                    cardData={project} 
-                    cardClass={classes.card}
-                    cardContentClass={classes.cardContent}
-                    cardMediaClass={classes.cardMedia}
-                  />
-                </Link>
+                <ProjectCard
+                  cardData={project} 
+                  cardClass={classes.card}
+                  cardContentClass={classes.cardContent}
+                  cardMediaClass={classes.cardMedia}
+                  detailsPath={`/projects/${project.title}`}
+                />
               </Grid>
             ))}
           </Grid>
