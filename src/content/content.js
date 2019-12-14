@@ -55,18 +55,18 @@ export const ProjectsContent = {
     {
       title: "KanBan Board",
       details: 'Re-creating a tool often used in Agile development',
-      imageUrl: "/images/kanban-board.png",
+      imageUrl: "/images/kanban-board.png", // '/images/kanban-board.png'
       imageTitle: 'screenshot of the kanban board project',
       codeUrl: 'https://github.com/nstranquist/coding-challenge',
       demoUrl: 'https://nstranquist.github.io/coding-challenge/',
     },
     {
-      title: "My First Project",
-      details: 'A subtitle that can summarize this first project',
-      imageUrl: "https://placekitten.com/300/500",
+      title: "RPG Quest",
+      details: 'An rpg game where users can level up and fight monsters, or elect to practice their hacking skills (Node.js version coming soon, hackers)',
+      // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
-      codeUrl: 'https://github.com/nstranquist',
-      demoUrl: 'https://github.com',
+      codeUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
+      // demoUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
     },
     {
       title: "My First Project",
@@ -78,14 +78,12 @@ export const ProjectsContent = {
     },
     {
       title: "My First Project",
-      imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
       demoUrl: 'https://github.com',
     },
     {
       title: "My First Project",
-      imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist',
       demoUrl: 'https://github.com',

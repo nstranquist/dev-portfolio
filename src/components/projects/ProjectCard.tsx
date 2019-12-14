@@ -8,6 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import AttachFileIcon from '@material-ui/icons/AttachFile'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
+// styled components
+// import { CardMediaStyle } from '../../styles/MediaCard'
 
 export interface ProjectCard {
   title: string
@@ -46,15 +48,30 @@ export const ProjectCard: React.FC<IProps> = ({
 }) => {
   // could add a hover or 'flip' feature to card, would pass in as prop to <CardWrapped> or something
   // const [flipped, setFlipped] = useState<boolean>(false)
+  // const colors = ['purple', 'green', 'red', 'blue', 'orange', 'yellow']
+  // const randomColor = colors[Math.random()*colors.length]
+  // const getRandomColor = () => {
+  //   let randomIndex = Math.random()*colors.length
+  //   return colors[randomIndex]
+  // }
 
   return (
       <Card className={cardClass}>
         <Link to={detailsPath} style={{color:'inherit', textDecoration:'none'}}>
-          <CardMedia
-            className={cardMediaClass}
-            image={imageUrl}
-            title={imageTitle}
-          />
+          {imageUrl ? (
+            <CardMedia
+              className={cardMediaClass}
+              image={imageUrl}
+              title={imageTitle}
+            />
+          ) : (
+            <CardMedia
+              className={cardMediaClass}
+              title={imageTitle}
+              // color={randomColor}
+              // backgroundColor={randomColor}
+            />
+          )}
         </Link>
         <CardContent className={cardContentClass}>
           <Typography gutterBottom variant="h5" component="h2">
@@ -70,10 +87,12 @@ export const ProjectCard: React.FC<IProps> = ({
             <AttachFileIcon />
             Code
           </Button>
-          <Button size="small" color="primary" href={demoUrl} target="_blank">
-            See Demo
-            <ArrowForwardIcon />
-          </Button>
+          {demoUrl && (
+            <Button size="small" color="primary" href={demoUrl} target="_blank">
+              See Demo
+              <ArrowForwardIcon />
+            </Button>
+          )}
         </CardActions>
       </Card>
   )
