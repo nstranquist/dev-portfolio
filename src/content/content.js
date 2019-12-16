@@ -63,7 +63,7 @@ export const ProjectsContent = {
     {
       title: "RPG Quest",
       details: 'An rpg game where users can level up and fight monsters, or elect to practice their hacking skills (Node.js version coming soon, hackers)',
-      // imageUrl: "https://placekitten.com/300/500",
+      imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'example title',
       codeUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
       // demoUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
