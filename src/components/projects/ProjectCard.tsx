@@ -36,7 +36,7 @@ export const ProjectCard: React.FC<IProps> = ({
     title,
     details,
     imageUrl,
-    imageTitle="description of the image",
+    imageTitle="this project image has no description",
     codeUrl,
     demoUrl=null
   },

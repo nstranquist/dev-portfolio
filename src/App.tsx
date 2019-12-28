@@ -5,7 +5,6 @@ import { Routes } from './Routes'
 // import components
 import { AppBar } from './components/layout/AppBar'
 import { AppFooter } from './components/layout/AppFooter'
-// import { Projects as ProjectsPage } from './pages/Projects'
 
 // import content
 import { PageContent } from './content'
@@ -20,7 +19,6 @@ export default function App() {
   return (
     <BrowserRouter>
       <AppBar content={headerContent} iconClass={AppStyles.icon} />
-      {/* TODO: replace with some kind of <RouterView> to switch routes */}
       <Routes />
       <AppFooter content={footerContent} footerClass={AppStyles.footer} />
     </BrowserRouter>

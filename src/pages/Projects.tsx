@@ -45,7 +45,7 @@ export const Projects = () => {
                   cardClass={classes.card}
                   cardContentClass={classes.cardContent}
                   cardMediaClass={classes.cardMedia}
-                  detailsPath={`/projects/${project.title}`}
+                  detailsPath={`/projects/${project.id}`}
                 />
               </Grid>
             ))}

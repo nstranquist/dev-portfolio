@@ -53,6 +53,7 @@ export const ProjectsContent = {
   },
   "Projects": [
     {
+      id: "kanban-board",
       title: "KanBan Board",
       details: 'Re-creating a tool often used in Agile development',
       imageUrl: "/images/kanban-board.png", // '/images/kanban-board.png'
@@ -61,6 +62,7 @@ export const ProjectsContent = {
       demoUrl: 'https://nstranquist.github.io/coding-challenge/',
     },
     {
+      id: "rpg-quest-pt-3",
       title: "RPG Quest (pt 3)",
       details: 'An rpg game where users can level up and fight monsters, or elect to practice their hacking skills (Node.js version coming soon, hackers)',
       // imageUrl: "https://placekitten.com/300/500",
@@ -69,6 +71,7 @@ export const ProjectsContent = {
       // demoUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
     },
     {
+      id: "city-passport",
       title: "City Passport",
       details: "Let's users rack up stamps while visiting the coolest places in their city",
       // imageUrl: "https://placekitten.com/300/500",
@@ -77,6 +80,7 @@ export const ProjectsContent = {
       // demoUrl: 'https://github.com',
     },
     {
+      id: "timeshift-clock",
       title: "TimeShift Clock",
       details: "Use this app to shift time in your favor. It redesigns the traditional clock with a focus on human productivity and psychology",
       // imageUrl: "https://placekitten.com/300/500",
@@ -85,6 +89,7 @@ export const ProjectsContent = {
       demoUrl: 'https://timeshift-grayscale.surge.sh',
     },
     {
+      id: "coding-idler",
       title: "Coding Idler",
       details: "A classic idler game, created in plain html, css, and javascript",
       imageTitle: 'screenshot of coding idler',
@@ -92,6 +97,7 @@ export const ProjectsContent = {
       demoUrl: 'https://coding-idler.surge.sh/',
     },
     {
+      id: "js-facial-recognition",
       title: "JS Facial Recognition",
       details: "Real-time facial recognition in-browser using JavaScript",
       // imageUrl: "https://placekitten.com/300/500",
@@ -100,6 +106,7 @@ export const ProjectsContent = {
       // demoUrl: 'https://github.com',
     },
     {
+      id: "event-dashboard-react",
       title: "Event Dashboard in React",
       details: "A minimalist dashboard where users can sign in, add and delete events",
       // imageUrl: "https://placekitten.com/300/500",
