@@ -55,7 +55,7 @@ export const ProjectsContent = {
     {
       id: "kanban-board",
       title: "KanBan Board",
-      details: 'Re-creating a tool often used in Agile development',
+      details: 'Re-creating a tool used in Agile development',
       imageUrl: "/images/kanban-board.png", // '/images/kanban-board.png'
       imageTitle: 'screenshot of the kanban board project',
       codeUrl: 'https://github.com/nstranquist/coding-challenge',
