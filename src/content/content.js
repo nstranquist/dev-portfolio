@@ -30,11 +30,34 @@ export const AboutMeContent = {
     details: "An enthusiastic, well-rounded software developer with specialized skills in javascript"
   },
   "Skills": {
+    // TODO: break skills up into individual items
     skills: [
-      'JavaScript',
-      'React.js',
-      'NoSQL',
-      'etc...'
+      'Front-End Web Development:',
+      '- Html, Css, Pre-processors',
+      '- JavaScript',
+      '- React.js',
+      '- Vue.js',
+      '- WebGL, three.js',
+      '',
+      'Mobile Development:',
+      '- React Native',
+      '- Flutter',
+      '',
+      'Game Development:',
+      '- Unity',
+      '- Phaser.js',
+      '- Socket.io',
+      '',
+      'Backend Development:',
+      'Node.js',
+      'Flask, Django',
+      'NoSQL, SQL',
+      'MongoDB, Postgres, MySQL',
+      '',
+      'Cloud Platforms:',
+      '- AWS',
+      '- Firebase',
+      '- App Engine',
     ],
   },
 }
@@ -73,7 +96,7 @@ export const ProjectsContent = {
     {
       id: "city-passport",
       title: "City Passport",
-      details: "Let's users rack up stamps while visiting the coolest places in their city",
+      details: "Lets users collect stamps while visiting the coolest places in their city",
       // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'screenshot of city passport project',
       codeUrl: 'https://github.com/nstranquist/city-passport',
