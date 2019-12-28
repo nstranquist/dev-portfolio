@@ -14,7 +14,7 @@ export const AppFooter: React.FC<IProps> = ({
   },
   footerClass
 }) => (
-  <footer className={footerClass}>
+  <footer className={footerClass} style={{marginTop: 'auto'}}>
     <Typography variant="h6" align="center" gutterBottom>
       {heading}
     </Typography>

@@ -21,10 +21,9 @@ export const ProjectDetail: React.FC<IProps> = ({
 
   const findProject = () => {
     const project: Project = projects.find((project: Project) => project.id === match.params.id)!
-    if(project) {
+    if(project)
       setProject(project)
-      console.log('set project to:', project)
-    }
+      
     else alert(`error: project ${match.params.id} is undefined`)
   }
 

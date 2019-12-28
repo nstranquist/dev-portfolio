@@ -22,7 +22,6 @@ interface IProps {
   // cardIconClass: any
 }
 
-// issue: <CardMedia /> not letting me assign an 'alt' property to the image... hmm
 export const ProjectCard: React.FC<IProps> = ({
   cardData: {
     id,
@@ -43,10 +42,9 @@ export const ProjectCard: React.FC<IProps> = ({
   // could add a hover or 'flip' feature to card, would pass in as prop to <CardWrapped> or something
   // const [flipped, setFlipped] = useState<boolean>(false)
   const getImage = () => {
-    // there are 3 possible image backgrounds: blue, green, and orange
-    console.log('image number for project:', title)
+
     const imageRemainder = imageNumber % 4
-    console.log('image remainder:', imageRemainder)
+    
     switch(imageRemainder) {
       case 0:
         return '/images/blue-background.png'
@@ -86,7 +84,6 @@ export const ProjectCard: React.FC<IProps> = ({
         </CardContent>
         <CardActions>
           <Button size="small" color="primary" href={codeUrl} target="_blank">
-            {/* Code/Nav Icon Here */}
             <AttachFileIcon />
             Code
           </Button>

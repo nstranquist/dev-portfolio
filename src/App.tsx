@@ -19,8 +19,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <AppBar content={headerContent} iconClass={AppStyles.icon} />
-      <Routes />
-      <AppFooter content={footerContent} footerClass={AppStyles.footer} />
+      <div style={{display:'flex', flexDirection:'column', minHeight:'calc(100vh - 64px)'}}>
+        <div style={{flex: 1}}>
+          <Routes />
+        </div>
+        <AppFooter content={footerContent} footerClass={AppStyles.footer} />
+      </div>
     </BrowserRouter>
   );
 }

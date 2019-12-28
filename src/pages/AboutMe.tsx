@@ -8,29 +8,34 @@ export const AboutMe = () => {
   return (
     <Container style={{paddingTop: 30}} className="aboutme-container">
       <Typography variant="h2" gutterBottom>About Nico</Typography>
-      <Typography variant="body1" gutterBottom>Some descriptive text about nico. This section should eventually include:</Typography>
-      <ul>
-        <li>tech skills</li>
-        <li>social media</li>
-        <li>other cool graphics</li>
-      </ul>
+      <Typography variant="body1" gutterBottom>
+          Some descriptive text about nico. This section should eventually include:</Typography>
+
       <Divider style={{marginTop:20, marginBottom:20}} />
-      {/* Add Content Here */}
+      
+      {/* Overview Section */}
       <section className="overview-section">
         <Typography variant="h5" gutterBottom>Overview</Typography>
         <Typography variant="body1" gutterBottom>{Overview.title}</Typography>
         <Typography variant="body1" gutterBottom>{Overview.details}</Typography>
-        <Divider style={{marginTop:20, marginBottom:30}} />
       </section>
+
+      <Divider style={{marginTop:20, marginBottom:30}} />
+
+      {/* Skills Section */}
       <section className="skills-section">
         <Typography variant="h5" gutterBottom>Skills</Typography>
-        {Skills.skills.map((skill: string) => {
+        {Skills.skills.map((skill: string, index: number) => {
           if(skill.length < 1)
-            return <Divider style={{marginTop:15, marginBottom:10}} />
+            return <Divider key={index} style={{marginTop:15, marginBottom:10}} />
 
-          return <Typography>{skill}</Typography>
+          return <Typography key={index}>{skill}</Typography>
         })}
       </section>
+
+      {/* <Divider style={{marginTop:20, marginBottom:30}} /> */}
+
+      {/* More Content Here */}
     </Container>
   )
 }

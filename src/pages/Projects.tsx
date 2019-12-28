@@ -15,11 +15,10 @@ import { ProjectsContent } from '../content'
 // import styles
 import { useProjectStyles } from '../styles/ProjectsStyles'
 
-// const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export const Projects = () => {
   const classes = useProjectStyles();
-  // const {card, cardContent, cardMedia} = classes
+
   const projects = ProjectsContent.Projects
 
   return (
@@ -36,6 +35,7 @@ export const Projects = () => {
             />
           </Container>
         </div>
+        {/* Projects Grid Section */}
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
             {projects.map((project, index) => (
