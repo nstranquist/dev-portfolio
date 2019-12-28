@@ -35,8 +35,8 @@ export const ProjectCard: React.FC<IProps> = ({
   cardData: {
     title,
     details,
-    imageUrl="https://placekitten.com/500/300",
-    imageTitle="Image Title",
+    imageUrl,
+    imageTitle="description of the image",
     codeUrl,
     demoUrl=null
   },
@@ -48,12 +48,19 @@ export const ProjectCard: React.FC<IProps> = ({
 }) => {
   // could add a hover or 'flip' feature to card, would pass in as prop to <CardWrapped> or something
   // const [flipped, setFlipped] = useState<boolean>(false)
-  // const colors = ['purple', 'green', 'red', 'blue', 'orange', 'yellow']
-  // const randomColor = colors[Math.random()*colors.length]
-  // const getRandomColor = () => {
-  //   let randomIndex = Math.random()*colors.length
-  //   return colors[randomIndex]
-  // }
+  const getRandomImage = () => {
+    // there are 3 possible image backgrounds: blue, green, and orange
+    const randomNumber = Math.floor(Math.random() * 3);
+    console.log('random number:', randomNumber)
+    switch(randomNumber) {
+      case 0:
+        return '/images/blue-background.png'
+      case 1:
+        return '/images/green-background.png'
+      case 2:
+        return '/images/orange-background.png'
+    }
+  }
 
   return (
       <Card className={cardClass}>
@@ -67,9 +74,8 @@ export const ProjectCard: React.FC<IProps> = ({
           ) : (
             <CardMedia
               className={cardMediaClass}
+              image={getRandomImage()}
               title={imageTitle}
-              // color={randomColor}
-              // backgroundColor={randomColor}
             />
           )}
         </Link>

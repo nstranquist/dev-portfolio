@@ -63,7 +63,7 @@ export const ProjectsContent = {
     {
       title: "RPG Quest (pt 3)",
       details: 'An rpg game where users can level up and fight monsters, or elect to practice their hacking skills (Node.js version coming soon, hackers)',
-      imageUrl: "https://placekitten.com/300/500",
+      // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'screenshot of rpg quest project',
       codeUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
       // demoUrl: 'https://github.com/nstranquist/rpg-quest-pt3',
@@ -71,7 +71,7 @@ export const ProjectsContent = {
     {
       title: "City Passport",
       details: "Let's users rack up stamps while visiting the coolest places in their city",
-      imageUrl: "https://placekitten.com/300/500",
+      // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'screenshot of city passport project',
       codeUrl: 'https://github.com/nstranquist/city-passport',
       // demoUrl: 'https://github.com',
@@ -79,7 +79,7 @@ export const ProjectsContent = {
     {
       title: "TimeShift Clock",
       details: "Use this app to shift time in your favor. It redesigns the traditional clock with a focus on human productivity and psychology",
-      imageUrl: "https://placekitten.com/300/500",
+      // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'screenshot of the timeshift clock app',
       codeUrl: 'https://github.com/nstranquist/timeshift-clock-grayscale',
       demoUrl: 'https://timeshift-grayscale.surge.sh',
@@ -94,7 +94,7 @@ export const ProjectsContent = {
     {
       title: "JS Facial Recognition",
       details: "Real-time facial recognition in-browser using JavaScript",
-      imageUrl: "https://placekitten.com/300/500",
+      // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'screenshot of facial recognition project',
       codeUrl: 'https://github.com/nstranquist/js-facial-recog',
       // demoUrl: 'https://github.com',
@@ -102,7 +102,7 @@ export const ProjectsContent = {
     {
       title: "Event Dashboard in React",
       details: "A minimalist dashboard where users can sign in, add and delete events",
-      imageUrl: "https://placekitten.com/300/500",
+      // imageUrl: "https://placekitten.com/300/500",
       imageTitle: 'screenshot of the events dashboard',
       codeUrl: 'https://github.com/nstranquist/react-dashboard-v1',
       demoUrl: 'https://event-dashboard-dee20.firebaseapp.com',
