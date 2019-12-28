@@ -1,4 +1,4 @@
-# Developer Portfolio [Live](https://nstranquist.github.io/dev-portfolio)
+# Developer Portfolio [Live](https://nicostranquist.com)
 
 This project is a webapp where I can write content and showoff my developer portfolio.  
 
