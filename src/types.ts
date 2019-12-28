@@ -4,6 +4,7 @@ export interface Project {
   details: string
   imageUrl?: string
   imageTitle?: string
+  codeUrl: string
   demoUrl?: string
 }
 

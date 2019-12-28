@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -8,31 +8,24 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import AttachFileIcon from '@material-ui/icons/AttachFile'
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward'
+import { Project } from '../../types';
 // styled components
 // import { CardMediaStyle } from '../../styles/MediaCard'
 
-export interface ProjectCard {
-  title: string
-  details: string
-  imageUrl?: string
-  imageTitle?: string
-  codeUrl: string
-  demoUrl?: string
-  detailsPath: string
-}
-
 interface IProps {
-  cardData: any
+  cardData: Project
   cardClass: any
   cardContentClass: any
   cardMediaClass: any
   detailsPath: string
+  imageNumber: number
   // cardIconClass: any
 }
 
 // issue: <CardMedia /> not letting me assign an 'alt' property to the image... hmm
 export const ProjectCard: React.FC<IProps> = ({
   cardData: {
+    id,
     title,
     details,
     imageUrl,
@@ -44,21 +37,25 @@ export const ProjectCard: React.FC<IProps> = ({
   cardContentClass,
   cardMediaClass,
   detailsPath,
+  imageNumber,
   // cardIconClass
 }) => {
   // could add a hover or 'flip' feature to card, would pass in as prop to <CardWrapped> or something
   // const [flipped, setFlipped] = useState<boolean>(false)
-  const getRandomImage = () => {
+  const getImage = () => {
     // there are 3 possible image backgrounds: blue, green, and orange
-    const randomNumber = Math.floor(Math.random() * 3);
-    console.log('random number:', randomNumber)
-    switch(randomNumber) {
+    console.log('image number for project:', title)
+    const imageRemainder = imageNumber % 4
+    console.log('image remainder:', imageRemainder)
+    switch(imageRemainder) {
       case 0:
         return '/images/blue-background.png'
       case 1:
         return '/images/green-background.png'
       case 2:
         return '/images/orange-background.png'
+      case 3:
+        return '/images/yellow-background.png'
     }
   }
 
@@ -74,7 +71,7 @@ export const ProjectCard: React.FC<IProps> = ({
           ) : (
             <CardMedia
               className={cardMediaClass}
-              image={getRandomImage()}
+              image={getImage()}
               title={imageTitle}
             />
           )}
