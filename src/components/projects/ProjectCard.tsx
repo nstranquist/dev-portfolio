@@ -47,13 +47,13 @@ export const ProjectCard: React.FC<IProps> = ({
     
     switch(imageRemainder) {
       case 0:
-        return '/images/blue-background.png'
+        return '/images/solids/blue-background.png'
       case 1:
-        return '/images/green-background.png'
+        return '/images/solids/green-background.png'
       case 2:
-        return '/images/orange-background.png'
+        return '/images/solids/orange-background.png'
       case 3:
-        return '/images/yellow-background.png'
+        return '/images/solids/yellow-background.png'
     }
   }
 
