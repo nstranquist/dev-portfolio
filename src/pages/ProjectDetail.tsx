@@ -15,16 +15,17 @@ export const ProjectDetail: React.FC<IProps> = ({
   
   useEffect(() => {
     // find project from projects content
-    findProject()
+    if(match.params.id)
+      findProject(match.params.id)
 
-  }, [match.params.id]) // only re-runs the effect of the match.params.id changes
+  }, [match.params.id])
 
-  const findProject = () => {
-    const project: Project = projects.find((project: Project) => project.id === match.params.id)!
+  const findProject = async (projectId: string) => {
+    const project: Project = await projects.find((project: Project) => project.id === projectId)!
     if(project)
       setProject(project)
-      
-    else alert(`error: project ${match.params.id} is undefined`)
+    else
+      alert(`error: project ${projectId} is undefined`)
   }
 
   return (
