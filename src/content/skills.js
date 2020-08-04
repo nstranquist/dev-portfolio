@@ -101,7 +101,8 @@ export const AboutMeContent = {
       details: [
         "Jest",
         "Mocha",
-        "Chai"
+        "Chai",
+        "Enzyme"
       ]
     },
     {
