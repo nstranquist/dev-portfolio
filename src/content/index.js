@@ -1,6 +1,6 @@
 import { PageContent } from './content'
-import { ProjectsContent } from './content'
-import { AboutMeContent } from './content'
+import { ProjectsContent } from './projects'
+import { AboutMeContent } from './skills'
 
 const projects = ProjectsContent["Projects"]
 

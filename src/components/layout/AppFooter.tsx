@@ -20,9 +20,9 @@ export const AppFooter: React.FC<IProps> = ({
     </Typography>
     <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
       Please reach out on
-      <Link href="https://github.com/nstranquist" target="_blank"> GitHub </Link>
+      <Link href="https://github.com/nstranquist" target="_blank" rel="noopener noreferrer"> GitHub </Link>
       or
-      <Link href="https://www.linkedin.com/in/nicholas-stranquist/" target="_blank"> LinkedIn </Link>
+      <Link href="https://www.linkedin.com/in/nstranquist/" target="_blank" rel="noopener noreferrer"> LinkedIn </Link>
       for inquiries
     </Typography>
     <Typography variant="body2" color="textSecondary" align="center">
